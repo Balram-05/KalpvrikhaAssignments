@@ -58,7 +58,7 @@ int main(){
     while(i<o){
         if(oper[i] == '*' || oper[i]=='/'){
             if(oper[i] == '/' && num[i+1]==0){
-                printf("Error: Division by Zero");
+                printf("Error: Division by zero");
                 return 0;
             }
 
