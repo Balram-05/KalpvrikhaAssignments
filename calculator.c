@@ -10,18 +10,18 @@ int main(){
     int hasNumber = 0;
 
     printf("Enter expression");
-    scanf("%[^\n], exp");
+    scanf("%[^\n]", exp);
 
     while(exp[i] != '\0'){
-        if(exp[i]==" "){
+        if(exp[i]==' '){
             i++;
             continue;
         }
 
-        if(exp[i]>'0' && exp[i]<'9'){
+        if(exp[i]>='0' && exp[i]<='9'){
             number = 0;
 
-            while(exp[i]>'0' && exp[i]<'9'){
+            while(exp[i]>='0' && exp[i]<='9'){
                 number = number*10+(exp[i]-'0');
                 i++;
             }
@@ -37,7 +37,7 @@ int main(){
                 return 0;
             }
 
-            oper[0]=exp[i];
+            oper[o]=exp[i];
             o++;
             hasNumber = 0;
             i++;
@@ -93,6 +93,6 @@ int main(){
         }
     }
 
-    print("%d", result);
+    printf("%d", result);
     return 0;
 }
